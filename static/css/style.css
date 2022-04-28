@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Comfortaa, sans-serif;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+hr{
+    margin: 20px;
+    opacity: 0%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #218380;
+    color: #ffffff;
+    font-size: 1em;
+    line-height: 135%;
+}
+a{
+    text-decoration: none;
+
+}
+header, footer{
+    width: 100%;
+    background-color: rgb(180, 20, 62);
+    min-height: 80px;
+}
+header{
+    text-align: center;
+    padding: 0;
+    border-bottom: 2px solid #144f4a;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.3);
+}#top_buttons{
+     margin-left: auto;
+     margin-right: auto;
+     min-height: 100%;
+ }
+#main, #artists, #songs{
+    text-align: center;
+    cursor: pointer;
+    height: 80px;
+    min-width: 230px;
+    display: inline-block;
+    margin: 0 -2px 0 -2px;
+    background-color: #b4143e;
+    font-size: 27px;
+    color: white;
+    transition: 0.3s;
+    border: none;
+}
+
+#main:hover, #artists:hover, #songs:hover{
+     background-color: #8d142f;
+}
+#search{
+    width: 200px;
+    border: #8c1bab;
+
+
+}
+#finder{
+    box-sizing: inherit;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 500px;
+    height: 90vh;
+    width: 100vw;
+
+
+}
+#content_body{
+    margin-top: 100px;
+}
+
+
+td{
+    font-size: 50px;
+    margin: 50px;
+    padding: 30px 50px 30px 20px;
+}
+footer{
+    padding: 1%;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -7px 7px rgba(0, 0, 0, 0.3);
+}

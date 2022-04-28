@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h1>{{ data[0]['artist_name'] }}</h1>
+    <hr>
+    <h2>Альбомы</h2>
+    <br>
+    {% for artisrt_data in data %}
+        <h3>{{ artisrt_data['album_name'] }}</h3>
+    {% endfor %}
+    <hr>
+    <h2>Об испонителе</h2>
+    <br>
+        <h4>{{ data[0]['artist_info'] }}<h4>
+{% endblock %}

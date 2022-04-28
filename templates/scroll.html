@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+    <table>
+    {% for song_data in data%}
+    <tr>
+        <td>
+           <a href="/artist/{{ song_data['artist_name'] }}/song/{{ song_data['song_name'] }}">{{ song_data['song_name'] }}</a>
+        </td>
+        <td>
+            <a href="/artist/{{ song_data['artist_name'] }}">{{ song_data['artist_name'] }}</a>
+        </td>
+        <td>
+            {{ song_data['artist_info'] }}
+        </td>
+    </tr>
+    {% endfor %}
+    </table>
+
+{% endblock %}

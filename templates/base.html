@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="../static/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../static/img/guitar_icon.ico" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+<header>
+    <nav id="top_buttons">
+        <button id="main"><a href="/">Главная</a></button>
+        <button id="artists"><a href="/artists">Испонители</a></button>
+        <button id="songs"><a href="/songs">Песни</a></button>
+    </nav>
+</header>
+<div id="content_body">
+{% block content %}{% endblock %}
+</div>
+<footer>
+
+</footer>
+</body>
+</html>
